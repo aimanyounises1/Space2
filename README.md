@@ -18,3 +18,14 @@ output_matched_lines = "/path/to/output_matched_lines.jpg"
 star_matcher = StarMatcher(image_path1, image_path2)
 matched_stars = star_matcher.match_stars()
 star_matcher.draw_matched_lines(output_matched_lines, matched_stars)
+
+# Requirements
+The code requires the following libraries:
+- OpenCV
+- Numpy
+- scikit-image
+
+To install the dependencies, run the following commands in your terminal:
+pip install opencv-python
+pip install numpy
+pip install scikit-image
