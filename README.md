@@ -1,21 +1,20 @@
-# Space2
-# Matching stars in two astronomical images using RANSAC
+# Star Matching
 
-This Python code uses RANSAC algorithm to match stars in two astronomical images. It is implemented in two classes:
-* `StarCoordinates`: which takes an image path as input and returns the coordinates of detected stars using HoughCircles algorithm.
-* `StarMatcher`: which takes the paths of two images and a threshold value as input, finds the coordinates of stars in both images using `StarCoordinates`, applies RANSAC algorithm to find the homography between the two sets of coordinates, and then draws lines between matched stars in the two images.
+A python implementation of a star matching algorithm for finding corresponding stars in two or more images.
 
-## Requirements
-
-* OpenCV
-* NumPy
-* scikit-image
+## Features
+- Uses the Hough Circle Transform to detect stars in an image
+- Implements RANSAC to match corresponding stars between two images
+- Draws lines connecting the matched stars in the two images
 
 ## Usage
-
-To use this code, simply create an instance of the `StarMatcher` class with the paths of two astronomical images as arguments:
+To use the code, you need to provide the path to two images as input to the `StarMatcher` class. The code will then return a list of matched stars and also create an image with lines connecting the matched stars.
 
 ```python
-image_path1 = "/path/to/image1.jpg"
-image_path2 = "/path/to/image2.jpg"
+image_path1 = "/path/to/image1.png"
+image_path2 = "/path/to/image2.png"
+output_matched_lines = "/path/to/output_matched_lines.jpg"
+
 star_matcher = StarMatcher(image_path1, image_path2)
+matched_stars = star_matcher.match_stars()
+star_matcher.draw_matched_lines(output_matched_lines, matched_stars)
