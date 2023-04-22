@@ -100,6 +100,8 @@ if __name__ == "__main__":
     '''
     star_coordinates = StarCoordinates(image_path1)
     star_coordinates2 = StarCoordinates(image_path2)
+    star_coordinates.coordinates = star_coordinates.get_coordinates()
+    star_coordinates2.coordinates = star_coordinates2.get_coordinates()
     star_coordinates.save_coordinates(output_path)
     star_coordinates2.save_coordinates(output_path)
 
