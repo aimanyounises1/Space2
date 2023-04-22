@@ -10,8 +10,7 @@ A python implementation of a star matching algorithm for finding corresponding s
 ## Usage
 To use the code, you need to provide the path to two images as input to the `StarMatcher` class. The code will then return a list of matched stars and also create an image with lines connecting the matched stars.
 
-
-# Requirements
+## Requirements
 The code requires the following libraries:
 - OpenCV
 - Numpy
@@ -30,7 +29,7 @@ output_matched_lines = "/path/to/output_matched_lines.jpg"
 star_matcher = StarMatcher(image_path1, image_path2)
 matched_stars = star_matcher.match_stars()
 star_matcher.draw_matched_lines(output_matched_lines, matched_stars)
-```
+
 
 ![output_matched_lines](https://user-images.githubusercontent.com/58775369/233666727-79f30b04-6f58-4a8b-b0d9-7334a66c71f1.jpg)
 
