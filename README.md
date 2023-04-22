@@ -31,7 +31,7 @@ matched_stars = star_matcher.match_stars()
 star_matcher.draw_matched_lines(output_matched_lines, matched_stars)
 ```
 
-Summarize:
+## Summarize:
 in this project we have to code an algorithm to match between stars in two images or more.
 trying to detect stars in the first image using CHT - use the OpenCv function HoughCircles(), 
 it works in roughly analogous way, that loads an image(reduce noise by blur it)->applies the houghCircleTransform ->display the detecedd circle in the window.
