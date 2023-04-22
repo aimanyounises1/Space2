@@ -31,5 +31,6 @@ matched_stars = star_matcher.match_stars()
 star_matcher.draw_matched_lines(output_matched_lines, matched_stars)
 ```
 
-![output_matched_lines](https://user-images.githubusercontent.com/58775369/233666727-79f30b04-6f58-4a8b-b0d9-7334a66c71f1.jpg)
+
+![output_matched_lines](https://user-images.githubusercontent.com/58775369/233772680-6cb21109-170f-4aae-bf2f-222e8a08a336.jpg)
 
