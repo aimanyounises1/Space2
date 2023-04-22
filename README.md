@@ -32,7 +32,7 @@ star_matcher.draw_matched_lines(output_matched_lines, matched_stars)
 ```
 
 ## Summarize
-in this project we have to code an algorithm to match between stars in two images or more , trying to detect stars in the first image using CHT - use the OpenCv function HoughCircles(), it works in roughly analogous way, that loads an image(reduce noise by blur it)->applies the houghCircleTransform ->display the detecedd circle in the window. Then we impelement the ransac - a statistical approach for curbing outliers , to match between the corresponding stars in the images and to connect between them by drawing lines.
+in this project we have to code an algorithm to match between stars in two images or more , trying to detect stars in the first image using CHT - use the OpenCv function HoughCircles(), it works in roughly analogous way, that loads an image(reduce noise by blur it)->applies the houghCircleTransform ->display the detecedd circle in the window. Then we impelement the ransac - a statistical approach for curbing outliers , to match between the corresponding stars in the images and to connect between them by drawing lines. <br />
 More information about the code: 
 in the code we use an externalLibrary(Numpy), and OpenCv, and OpenSource(scikit-image), they all must be installed before running the code.
 the star_coordinates library spilit --- 
